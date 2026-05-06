@@ -54,8 +54,4 @@ resource "aws_cloudwatch_metric_alarm" "rds_cpu" {
     DBInstanceIdentifier = aws_db_instance.db_nicuBura.identifier
   }
 }
-variable "db_password" {
-  description = "RDS password"
-  type        = string
-  sensitive   = true
-}
+
